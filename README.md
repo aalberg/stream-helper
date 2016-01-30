@@ -2,7 +2,7 @@
 Stream helper program for SSBM. Written for UMDsmash
 
 ## Version
-.1
+.2
 
 [changelog](CHANGES.md)
 
@@ -19,5 +19,25 @@ PyQt 4
 
 https://www.riverbankcomputing.com/software/pyqt/download
 
+PILLOW
+
+Run `python -m pip install pillow` in cmd
+
 ## Documentation
-Read documentation coming Soon(TM)
+Real documentation coming Soon(TM)
+
+## Temporary bad documentation
+Edit sprite_folder, dest_prefix, file_suffix in character_heads.py to change
+the directories being used
+
+Change line 20 to change the saturation divider if desired.
+
+Default Values
+
+sprite_folder = "SSBMsprites/"
+
+dest_prefix = "output/p"
+
+file_suffix = ".png"
+
+Line 20: s = s/2.0
