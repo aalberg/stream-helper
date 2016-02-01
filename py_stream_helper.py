@@ -11,7 +11,6 @@ image_dest_folder = "output/img/"
 image_dest_prefix = "char_"
 image_suffix = ".png"
 
-    
 def CreateDirectories():
   if not os.path.exists(text_folder):
     print "Creating text output folder", text_folder
@@ -28,7 +27,7 @@ def ConvertImage(filename):
     for x in range(width):
       r, g, b, a = ld[x,y]
       h, s, v = colorsys.rgb_to_hsv(r / 255.0, g / 255.0, b / 255.0)
-      s = s/2.0
+      s = s / 2.0
       r, g, b = colorsys.hsv_to_rgb(h, s, v)
       ld[x,y] = (int(r * 255.9999), int(g * 255.9999), int(b * 255.9999), a)
   im.save(filename)
